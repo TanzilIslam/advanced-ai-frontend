@@ -8,6 +8,8 @@ import SignUp from './pages/SignUp'
 import Resources from './pages/Resources'
 import Pricing from './pages/Pricing'
 import Header from './components/Header'
+import PrivateRoute from './components/PrivateRoute';
+import Profile from './pages/Profile';
 
 export default function App() {
   return (
@@ -20,6 +22,9 @@ export default function App() {
             <Route path='/affilicate' element={<Affiliate/>} />
             <Route path="/resources" element={<Resources />} />
             <Route path='/pricing' element={<Pricing/>} />
+            <Route element={<PrivateRoute />}>
+              <Route path='/profile' element={<Profile/>} />
+            </Route>
         </Routes>
     </BrowserRouter>
   )
