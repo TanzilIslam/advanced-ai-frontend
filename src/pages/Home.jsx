@@ -22,7 +22,7 @@ export default function Home() {
         and let it handle customer support
       </div>
       <Link
-        to={'/search'}
+        to={'/chatbots'}
         className='text-xs sm:text-sm text-blue-800 font-bold hover:underline'
       >
         Let's get started...
