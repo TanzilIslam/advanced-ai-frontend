@@ -37,7 +37,7 @@ export default function SignIn() {
         return;
       }
       dispatch(signInSuccess(data));
-      navigate('/Chatbots');
+      navigate('/');
     } catch (error) {
       dispatch(signInFailure(error.message));
     }
